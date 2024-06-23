@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-interface InstallationType {
+export interface InstallationType {
   title: string;
   code: string;
 }
