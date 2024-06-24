@@ -71,9 +71,9 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="bg-[#000000] text-[#eaeaea] p-8 w-1/4 h-screen flex flex-col gap-10 overflow-auto">
+    <div className="bg-[#000000]  text-[#eaeaea] p-8 w-1/4 h-screen flex flex-col gap-10 overflow-auto">
       <div>
-        <h1 className="text-2xl font-semibold cursor-pointer">WooComponent</h1>
+        <h1 className="text-2xl font-semibold cursor-pointer text-[#36B5EF]">WooComponent</h1>
       </div>
       {arr.map((category, i) => (
         <SidebarComponent
@@ -103,7 +103,7 @@ const SidebarComponent = ({
       {Object.keys(category).map((categoryName, i) => (
         <div key={i} className="flex flex-col gap-5">
           <h3
-                      className="font-semibold text-xl cursor-pointer flex justify-between pl-1"
+                      className="font-semibold text-xl cursor-pointer flex justify-between pl-1 "
                       onClick={() => toggleSubcategory(categoryName)}
                     >
             {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}{" "}
@@ -119,7 +119,7 @@ const SidebarComponent = ({
                 {Object.keys(subCategory).map((subCategoryName, k) => (
                   <div key={k}>
                     <h3
-                      className="font-semibold text-xl cursor-pointer flex justify-between pl-7"
+                      className="font-semibold text-xl cursor-pointer flex justify-between pl-7  text-[#8c8c91] transition-all ease-in-out delay-150 duration-30 hover:text-[#36B5EF] hover:ml-2 hover:transition-all hover:ease-in-out  hover:duration-30"
                       onClick={() => toggleSubcategory(subCategoryName)}
                     >
                       {subCategoryName.charAt(0).toUpperCase() + subCategoryName.slice(1)}{" "}
@@ -131,7 +131,7 @@ const SidebarComponent = ({
                       }`}
                     >
                       {subCategory[subCategoryName].map((item: any, l: any) => (
-                        <p className="font-normal text-xl cursor-pointer transition-max-height duration-500 ease-out overflow-hidden " key={l}>
+                        <p className="font-normal text-xl cursor-pointer transition-max-height duration-500 ease-out overflow-hidden  text-[#9e9eaa] hover:text-[#36B5EF] hover:ml-2 hover:transition-all hover:ease-in-out  hover:duration-30" key={l}>
                           {item}
                         </p>
                       ))}
