@@ -7,7 +7,6 @@ export async function POST(req:NextRequest){
         await dbConnect();
         const reqBody = await req.json();
         const {title,subTitle,code,isPaid,installation,subscriptionType} = reqBody;
-        console.log(subscriptionType,"subaa")
         if(!title || !subTitle || !code  ){
             return NextResponse.json({
                 message:"please fill the all Fields ",
