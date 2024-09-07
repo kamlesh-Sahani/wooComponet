@@ -1,4 +1,4 @@
-# Modern Tailwind Components Library
+# WooComponent Modern Tailwind Components Library
 
 **A collection of modern, reusable Tailwind CSS components for seamless integration into your projects.**
 
